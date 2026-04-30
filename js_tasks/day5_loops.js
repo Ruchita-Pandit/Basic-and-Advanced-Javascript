@@ -70,3 +70,53 @@ function greet(name) {
 }
 greet("Priya");
 greet("Aarav");
+
+//==============================================================================================================================================================================================================================
+
+//HOMEWORK
+// Print numbers 1 to 50, but for multiples of 3 print "Fizz", multiples of 5 print "Buzz", multiples of both print "FizzBuzz".
+console.log("\n");
+for(let i=1;i<=50;i++){
+    if(i%3==0 && i%5==0){
+        console.log("FizzBuzz");
+    }
+    else if(i%5==0){
+        console.log("Buzz");
+    }
+    else if(i%3==0){
+        console.log("Fizz");
+    }
+    else{
+    console.log(i);
+    }
+}
+
+// Use a while loop to find the smallest number n where n * n > 1000.
+console.log("\n");
+let n =1
+while(n*n<=1000){
+    n++
+}
+console.log(n);
+
+// Print a triangle of stars (5 rows): *, **, ***, ****, ***** — use nested for loops.
+console.log("\n");
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row += "*";
+  }
+  console.log(row);
+}
+
+// Given const scores = [88, 72, 95, 60, 41];, use for...of to find and log the highest score.
+console.log("\n");
+const scores = [88, 72, 95, 60, 41];
+let highestScore=0
+for (const i of scores) {
+    if(highestScore<i){
+        highestScore=i;
+    }
+}
+console.log("Highest Score : ",highestScore);
+
