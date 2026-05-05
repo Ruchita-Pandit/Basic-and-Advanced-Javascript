@@ -44,3 +44,11 @@ const nums = [1, 2, 3, 4, 5];
 const [head, ...tail] = nums;
 console.log(head);    // 1
 console.log(tail);    // [2, 3, 4, 5]
+
+const defaultInfo = { name: "Guest", role: "User" };
+ 
+const showInfo = (info = defaultInfo) =>
+  `${info.role}: ${info.name}`;
+ 
+console.log(showInfo());                      // "User: Guest"
+console.log(showInfo({ name: "Riya", role: "User" })); // "User: Riya"
